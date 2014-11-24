@@ -4,8 +4,8 @@
   "description": "Example of using browserify-shim to shim jquery for use with browserify",
   "main": "./entry.js",
   "browser": {
-    "jquery": "./node_modules/jquery/dist/jquery.js",
-    "jquery-mobile": "jquery.mobile-1.4.5.js"
+    "jquery": "./node_modules/jquery/dist/jquery.min.js",
+    "jquery-mobile": "./jquery.mobile-1.4.5.min.js"
   },
   "browserify-shim": {
     "jquery": "$",
