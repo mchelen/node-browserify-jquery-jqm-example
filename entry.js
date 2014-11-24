@@ -5,9 +5,7 @@ jqVersion = $().jquery;
 
 $('#jq-version').text(jqVersion);
 
-$.mobile.loading( "show", {
-  text: "foo",
-  textVisible: true,
-  theme: "z",
-  html: ""
+$(document).ready(function () {   
+  setTimeout(function () {$.mobile.changePage('#pagetwo');}, 3000);
 });
+

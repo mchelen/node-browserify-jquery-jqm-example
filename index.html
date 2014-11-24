@@ -3,11 +3,43 @@
 <head>
   <meta charset=utf-8 />
   <title>jquery shim example</title>
+  <link rel="stylesheet" href="./jquery.mobile-1.4.5.min.css">
 </head>
-<body>
-  <h1>Welcome to the browserify-shim jquery Example</h1>
-  <p>You are using jquery version:</p>
-  <span id='jq-version'></span>
-  <script type="text/javascript" src="./bundle.js"></script>
-</body>
+  <body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Welcome to the browserify-shim jquery Example</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" style="font-size:large">
+    <p>You are using jquery version:</p>
+    <span id='jq-version'></span>
+    <p>Changing to pagetwo in 3 seconds...</p>
+    <p>Reload page to test again.</p>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>Page Two</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" style="font-size:large">
+    <p>This is page two, which means <code>$.mobile.changePage('#pagetwo')</code> ran successfully.</p>
+    <a href="#pageone" class="ui-btn">Back to Page One</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+    <script type="text/javascript" src="./bundle.js"></script>
+
+  </body>
 </html>
