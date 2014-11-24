@@ -9,14 +9,16 @@
 
 <div data-role="page" id="pageone">
   <div data-role="header">
-    <h1>Welcome to the browserify-shim jquery Example</h1>
+    <h1>Page One</h1>
   </div>
 
   <div data-role="main" class="ui-content" style="font-size:large">
-    <p>You are using jquery version:</p>
+    <h1>Welcome to the browserify-shim jquery mobile Example</h1>
+    <p>You are using jQuery version:</p>
     <span id='jq-version'></span>
-    <p>Changing to pagetwo in 3 seconds...</p>
-    <p>Reload page to test again.</p>
+    <p>Click button to test <code>$.mobile.changePage('#pagetwo')</code></p>
+    <button class="ui-btn" data-foo="#pagetwo">Go to Page Two</button>
+
   </div>
 
   <div data-role="footer">
@@ -30,8 +32,8 @@
   </div>
 
   <div data-role="main" class="ui-content" style="font-size:large">
-    <p>This is page two, which means <code>$.mobile.changePage('#pagetwo')</code> ran successfully.</p>
-    <a href="#pageone" class="ui-btn">Back to Page One</a>
+    <p>Success! <code>$.mobile.changePage('#pagetwo')</code> ran successfully.</p>
+    <button class="ui-btn" data-foo="#pageone">Go to Page One</button>
   </div>
 
   <div data-role="footer">
