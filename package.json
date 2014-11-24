@@ -1,0 +1,31 @@
+{
+  "name": "shim-jquery",
+  "version": "0.0.0",
+  "description": "Example of using browserify-shim to shim jquery for use with browserify",
+  "main": "./entry.js",
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Thorsten Lorenz",
+  "license": "BSD",
+  "dependencies": {
+    "request": "~2.12.0",
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "browserify": "~2.36.1",
+    "browserify-shim": "~3.0.0"
+  }
+}
