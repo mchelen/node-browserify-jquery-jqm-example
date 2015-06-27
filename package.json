@@ -2,9 +2,13 @@
   "name": "shim-jquery",
   "version": "0.0.0",
   "description": "Example of using browserify-shim to shim jquery for use with browserify",
+  "license": "CC0-1.0",
+  "repository" : "gist:a8c5649da6bb50816f7e",
   "main": "./entry.js",
   "browserify": {
-    "transform": [ "browserify-shim" ]
+    "transform": [
+      "browserify-shim"
+    ]
   },
   "browser": {
     "jquery": "./jquery-1.11.1.min.js",
@@ -12,15 +16,19 @@
   },
   "browserify-shim": {
     "jquery": "$",
-    "jquery-mobile" : { "exports": "$.mobile", "depends": [ "jquery:$" ] }
+    "jquery-mobile": {
+      "exports": "$.mobile",
+      "depends": [
+        "jquery:$"
+      ]
+    }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
-  "author": "Thorsten Lorenz",
-  "license": "BSD",
   "dependencies": {
+    "jquery": "^2.1.4",
+    "jquery-mobile": "^1.4.1",
     "request": "~2.12.0"
   },
   "devDependencies": {
