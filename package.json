@@ -11,7 +11,7 @@
     ]
   },
   "browser": {
-    "jquery": "./jquery-1.11.1.min.js",
+    "jquery": "./node_modules/jquery/dist/jquery.min.js",
     "jquery-mobile": "./jquery.mobile-1.4.5.min.js"
   },
   "browserify-shim": {
@@ -27,7 +27,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "jquery": "^2.1.4",
+    "jquery": "^1.11.1",
     "jquery-mobile": "^1.4.1",
     "request": "~2.12.0"
   },
